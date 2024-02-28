@@ -5,6 +5,7 @@ import Input from '@components/Input'
 
 export default function Home() {
   const [value, setValue] = useState(0);
+  const decimal = 2;
   return (
     <div className="container">
       <Head>
@@ -14,7 +15,7 @@ export default function Home() {
       <main>
         <Input
           placeholder={'0.'.padEnd(decimal + 2, '0')}
-          decimal={2}
+          decimal={decimal}
           maxRange={99999999.99}
           onChange={(value) => setValue(value)}
           value={value}

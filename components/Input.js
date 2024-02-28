@@ -37,10 +37,10 @@ const Input = ({
   isBlurInput,
 }) => {
   const [isFocus, setIsFocus] = useState(false);
-  const [valueInput, setValueInput] = useState<string>(
+  const [valueInput, setValueInput] = useState(
     numericToLocaleString({ value, decimal })
   );
-  const inputRef = useRef<HTMLInputElement>(null);
+  const inputRef = useRef(null);
 
   useEffect(() => {
     if (!isFocus) {
