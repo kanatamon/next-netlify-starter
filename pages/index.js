@@ -8,20 +8,7 @@ export default function Home() {
   const decimal = 2;
   return (
     <div className="container">
-      <Head>
-        <title>Next.js Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <main>
-        <Input
-          placeholder={'0.'.padEnd(decimal + 2, '0')}
-          decimal={decimal}
-          maxRange={99999999.99}
-          onChange={(value) => setValue(value)}
-          value={value}
-        />
-      </main>
-      <Footer />
+      <iframe src="/dummy.pdf" width="100%" height="500px" />
     </div>
   )
 }
