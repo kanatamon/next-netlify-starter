@@ -1,14 +1,5 @@
-import { useState } from 'react'
-import Head from 'next/head'
-import Footer from '@components/Footer'
-import Input from '@components/Input'
-
 export default function Home() {
-  const [value, setValue] = useState(0);
-  const decimal = 2;
-  return (
-    <div className="container">
-      <iframe src="/dummy.pdf" width="100%" height="500px" />
-    </div>
+  return (    
+    <iframe src="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/44678.pdf" style={{ width: '100%', height: '100vh'}} />
   )
 }
